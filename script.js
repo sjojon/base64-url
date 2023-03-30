@@ -17,6 +17,7 @@ function input(fileInput) {
     reader.addEventListener('load', () => {
         file = reader.result;
         document.getElementById('image').setAttribute('src', file);
+        console.log(reader.result); // Logger stringen til bildet i consollen
     });
 
     reader.readAsDataURL(file);
